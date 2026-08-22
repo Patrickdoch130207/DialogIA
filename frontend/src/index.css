@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+  --font-round: "Fredoka", sans-serif;
+
+  --color-primary: #3b82f6;
+  --color-primary-light: #60a5fa;
+  --color-primary-dark: #2563eb;
+
+  --color-danger: #e4544f;
+  --color-success: #35a26b;
+
+  --color-surface: #f7f8fa;
+
+  --color-border: #e4e9f0;
+  --color-border-strong: #dde4ec;
+
+  --color-text: #2c2c2a;
+  --color-text-muted: #5c6b7e;
+  --color-text-faint: #8b98a9;
+
+  --color-accent-bg: #edf3fb;
+  --color-accent-border: #d6e3f6;
+  --color-accent-text: #3b5a85;
+
+  --radius-4xl: 36px;
+
+  --animate-float: float 3.5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+}
